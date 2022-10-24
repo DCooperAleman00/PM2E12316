@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12316.vista">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Image Source="{Binding imgRuta}" WidthRequest="300" HeightRequest="300"/>
+            <Label Text="{Binding codigo}"  x:Name="lblCodigo" />
+            <Label Text="{Binding latitud}" />
+            <Label Text="{Binding longitud}" />
+            <Label Text="{Binding descripcion}" />
+            <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

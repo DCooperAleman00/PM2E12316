@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12316.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+            <Label Text="Examen I Parcial Danny Cooper Y Erick Colindres" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        </Frame>
+        <Image x:Name="foto" Source="camera2.png" Margin="4,0,2,0" WidthRequest="150" HeightRequest="150"  />
+        <Button x:Name="btnFoto" Text="Foto" Clicked="btnFoto_Clicked" />
+   
+        <Grid ColumnDefinitions="*,*">
+            <Label Text="Latitud y Altitud" FontSize="20" HeightRequest="90"  />
+            <Entry x:Name="txtLatitud" Placeholder="Latitud" IsEnabled="False" />
+            <Entry Grid.Column="1"  x:Name="txtLongitud" Placeholder="Longitud" IsEnabled="False"/>
+        </Grid>
+        <Label Text="Descripcion" FontSize="20" HeightRequest="25"  />
+        <Entry x:Name="txtDescripcion" Placeholder="Descripción" HeightRequest="50" />
+
+        <Grid ColumnDefinitions="*,*">
+            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked" Margin="20" />
+            <Button Grid.Column="1" x:Name="btnLista" Text="Lista" Clicked="btnLista_Clicked" Margin="20" />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
